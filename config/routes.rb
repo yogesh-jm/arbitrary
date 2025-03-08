@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
   namespace :api do
-    post "generate_client", to: "oauth_clients#create"
+    post "generate_client", to: "o_auth_clients#create"
     namespace :v1 do
       resources :posts, only: [:index]
     end
